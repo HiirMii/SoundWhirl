@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryLight"
+    tools:context="com.example.android.soundwhirl.PlayerActivity">
+
+    <ImageView
+        android:id="@+id/collapse_arrow"
+        style="@style/collapse_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@string/collapse_arrow_description"
+        android:src="@drawable/ic_arrow" />
+
+    <TextView
+        android:id="@id/player_uploader"
+        style="@style/player_activity_uploader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@id/collapse_arrow"
+        android:layout_toStartOf="@id/collapse_arrow"
+        android:text="@string/uploader" />
+
+    <TextView
+        android:id="@id/player_song"
+        style="@style/player_activity_song"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/player_uploader"
+        android:text="@string/artist_title" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/previous_icon_description"
+        android:src="@drawable/ic_previous" />
+
+    <ImageView
+        android:id="@+id/song_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="48dp"
+        android:contentDescription="@string/song_image_description"
+        android:src="@drawable/soundwhirl_logo" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/next_icon_description"
+        android:src="@drawable/ic_next" />
+
+    <TextView
+        style="@style/description_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/player_song"
+        android:background="@color/opaque"
+        android:text="@string/player_activity_description" />
+
+    <LinearLayout
+        android:id="@+id/bottom_toolbar"
+        style="@style/bottom_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <ImageView
+            android:id="@+id/favourite_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/favourite_icon_description"
+            android:src="@drawable/ic_favorite" />
+
+        <ImageView
+            android:id="@+id/share_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/share_icon_description"
+            android:src="@drawable/ic_share" />
+
+        <ImageView
+            android:id="@+id/list_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/list_icon_description"
+            android:src="@drawable/ic_list" />
+
+        <ImageView
+            android:id="@+id/more_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/more_icon_description"
+            android:src="@drawable/ic_more" />
+
+    </LinearLayout>
+
+</RelativeLayout>

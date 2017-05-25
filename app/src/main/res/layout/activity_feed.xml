@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.soundwhirl.FeedActivity">
+
+    <LinearLayout
+        android:id="@+id/menu_bar"
+        style="@style/menu_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_height"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/search"
+            style="@style/menu_items"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/search"
+            android:textAllCaps="true" />
+
+        <TextView
+            android:id="@+id/feed"
+            style="@style/active_menu_item"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/hot"
+            android:textAllCaps="true" />
+
+        <TextView
+            android:id="@+id/favourites"
+            style="@style/menu_items"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/favourites"
+            android:textAllCaps="true" />
+
+        <TextView
+            android:id="@+id/profile"
+            style="@style/menu_items"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/profile"
+            android:textAllCaps="true" />
+    </LinearLayout>
+
+    <TextView
+        style="@style/description_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/menu_bar"
+        android:text="@string/feed_activity_description" />
+
+    <RelativeLayout
+        android:id="@+id/player"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimaryDark">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/player_accent_bar_height"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorAccent" />
+
+        <ImageView
+            android:id="@+id/player_button"
+            style="@style/player_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/pause_icon_description"
+            android:src="@drawable/ic_pause" />
+
+        <TextView
+            android:id="@+id/player_uploader"
+            style="@style/player_uploader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/player_button"
+            android:layout_toRightOf="@id/player_button"
+            android:text="@string/uploader" />
+
+        <TextView
+            android:id="@+id/player_song"
+            style="@style/player_song"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/player_uploader"
+            android:layout_toEndOf="@id/player_button"
+            android:layout_toRightOf="@id/player_button"
+            android:text="@string/artist_title" />
+    </RelativeLayout>
+
+</RelativeLayout>

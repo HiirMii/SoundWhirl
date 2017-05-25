@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">SoundWhirl</string>
+
+    <!-- Menu items -->
+
+    <string name="search">Dive In</string>
+    <string name="hot">Hot &amp; New</string>
+    <string name="favourites">Favourites</string>
+    <string name="profile">Profile</string>
+
+    <!-- Activities descriptions -->
+
+    <string name="main_activity_description">When you open SoundWhirl online music streaming app you will have couple of options provided:
+        \n 1. Top navigation menu. It will finally be implemented using TabLayout and Fragment class.
+    \n 2. Search View at the top as the main tool for searching music you like. Search Interface will be implemented with SearchView class and searchable activity.
+    \n 3. Horizontal Scroll Views with recommended songs, artists, playlists based on your favourites, and previous searches.
+    \n 4. Horizontal Scroll Views with TOP lists based on other users activity.
+    \n For all kind of song lists RecyclerView and LayoutInflater will be used to create song items, or playlist items dynamically.
+    \n \n At the bottom of the activity there is the player waiting for you to view or pause what you were recently listening to. MediaController class is used to implement it.</string>
+
+    <string name="feed_activity_description">This Activity will have an appearance similar to social network apps.
+        All information will be available as timeline, arranged by the posting time.
+        You will be able to see all new songs uploaded by someone you already liked or added to your favourites.
+        You will be also noticed about hot songs that other users like or listen to.
+        To implement the timeline I will use RecyclerView, LayoutInflater and CardView.
+    \n \n At the bottom of the activity there is the player waiting for you to view or pause what you were recently listening to. MediaController class is used to implement it.</string>
+
+    <string name="favourites_activity_description">This Activity will contain songs you liked, playlists you liked or made by yourself.
+    \n You will be able to create playlist here as well. Below you will have your history as a list.
+        \n For all kind of song lists RecyclerView and LayoutInflater will be used to create song items, or playlist items dynamically.
+    \n \n At the bottom of the activity there is the player waiting for you to view or pause what you were recently listening to. MediaController class is used to implement it.</string>
+
+    <string name="profile_activity_description">This activity will contain information about your profile.
+    \n 1. Avatar and user name.
+    \n 2. Notification settings (link to another intent).
+    \n 3. App settings (link another intent).
+    \n 4. Help and legal information (links to intents).
+    \n 5. Sign out button.
+    \n \n At the bottom of the activity there is the player waiting for you to view or pause what you were recently listening to. MediaController class is used to implement it.</string>
+
+    <string name="player_activity_description">Player will have an image associated with the song as the background. You will be able to play/pause the song,
+    jump to next/previous song and options to like the song, share in social media view the song list and other options. In the top right corner there is the arrow button
+    used to collapse the player.
+    \n To implement functionality of the player itself I will use MediaPlayer class, MediaController class and the
+        Service class instance to play audio when the user is not directly interacting with the app.</string>
+
+    <!-- Player -->
+
+    <string name="uploader">Uploader</string>
+    <string name="artist_title">Artist - Title</string>
+
+    <!-- Image descriptions -->
+
+    <string name="pause_icon_description">Pause player button.</string>
+    <string name="collapse_arrow_description">Back to previous activity button.</string>
+    <string name="song_image_description">Image associated with the song.</string>
+    <string name="previous_icon_description">Play previous song button.</string>
+    <string name="next_icon_description">Play next song button.</string>
+    <string name="favourite_icon_description">Add to favourites button.</string>
+    <string name="share_icon_description">Share the song button.</string>
+    <string name="list_icon_description">Show playlist button.</string>
+    <string name="more_icon_description">More options_button.</string>
+</resources>
